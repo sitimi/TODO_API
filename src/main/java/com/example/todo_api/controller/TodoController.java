@@ -36,7 +36,7 @@ public class TodoController {
 		todoService.addTodo(todoWithoutId);
 	}
 
-	//	個別詳細取得
+	//個別詳細取得
 	@GetMapping("/{id}")
 	public TodoResponse getTodo(@PathVariable Integer id) {
 		return todoService.getTodo(id);
@@ -53,4 +53,4 @@ public class TodoController {
 	public  void putTodo(@PathVariable Integer id, @RequestBody TodoWithoutId todoWithoutId) {
 		todoService.putTodo(id, todoWithoutId);
 	}
-}
+}    
